@@ -1,1 +1,7 @@
 node_modules
+.next
+out
+.node
+.vercel
+*.log
+.env*
