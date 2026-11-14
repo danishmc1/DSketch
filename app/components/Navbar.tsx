@@ -29,12 +29,21 @@ export default function Navbar() {
             href="/"
             className="flex items-center gap-2.5 group"
           >
-            <div className="relative w-8 h-8 rounded-md overflow-hidden border border-stone-300 dark:border-stone-700 bg-black flex-shrink-0 shadow-sm transition-transform duration-300 group-hover:scale-105">
+            <div className="relative h-9 w-9 flex-shrink-0 transition-transform duration-300 group-hover:scale-105">
               <Image
-                src={assetPath("/images/icon-black.jpg")}
+                src={assetPath("/images/logo-black.png")}
                 alt="D-Sketch Logo"
                 fill
-                className="object-cover"
+                className="object-contain dark:hidden"
+                priority
+                unoptimized
+              />
+              <Image
+                src={assetPath("/images/logo-white.png")}
+                alt="D-Sketch Logo"
+                fill
+                className="object-contain hidden dark:block"
+                priority
                 unoptimized
               />
             </div>

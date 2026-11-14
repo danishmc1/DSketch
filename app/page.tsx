@@ -18,13 +18,13 @@ export default function Home() {
   return (
     <div className="space-y-10">
       {/* Hero Banner */}
-      <div className="relative w-full aspect-[16/6] min-h-[220px] max-h-[380px] rounded-2xl overflow-hidden border border-stone-200/80 dark:border-stone-800 bg-stone-100 dark:bg-stone-900 shadow-sm group">
+      <div className="relative w-full aspect-[1024/235] rounded-2xl overflow-hidden border border-stone-200/80 dark:border-stone-800 bg-stone-100 dark:bg-stone-900 shadow-sm group">
         <Image
           src={assetPath("/images/banner.jpeg")}
-          alt="D-SKETCH Architecture - Thoughtful spaces. From concept to completion."
+          alt="D-SKETCH Architecture - Designing Visions. Building Legacies."
           fill
           priority
-          className="object-cover object-center transition-transform duration-700 group-hover:scale-[1.01]"
+          className="object-cover object-left md:object-center transition-transform duration-700 group-hover:scale-[1.01]"
           sizes="(max-width: 1280px) 100vw, 1280px"
           unoptimized
         />

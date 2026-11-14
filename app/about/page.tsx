@@ -34,15 +34,25 @@ export default function AboutPage() {
             Our portfolio spans bespoke residential residences, intimate luxury villas, and expansive commercial developments across Kerala and beyond. Whether an innovative new build, a sensitive renovation, or a bespoke interior transformation, D-SKETCH delivers each project with rigor, artistic integrity, and technical precision.
           </p>
         </div>
-        <div className="md:col-span-4 relative aspect-square w-full rounded-2xl overflow-hidden border border-stone-200 dark:border-stone-800 shadow-md bg-stone-100 dark:bg-stone-900">
-          <Image
-            src={assetPath("/images/logo-square.jpeg")}
-            alt="D-SKETCH Architecture Brand Logo"
-            fill
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, 320px"
-            unoptimized
-          />
+        <div className="md:col-span-4 relative aspect-square w-full rounded-2xl overflow-hidden border border-stone-200 dark:border-stone-800 shadow-md bg-stone-100 dark:bg-stone-900 flex items-center justify-center p-8">
+          <div className="relative w-full h-full">
+            <Image
+              src={assetPath("/images/logo-black.png")}
+              alt="D-SKETCH Architecture Brand Logo"
+              fill
+              className="object-contain dark:hidden"
+              sizes="(max-width: 768px) 100vw, 320px"
+              unoptimized
+            />
+            <Image
+              src={assetPath("/images/logo-white.png")}
+              alt="D-SKETCH Architecture Brand Logo"
+              fill
+              className="object-contain hidden dark:block"
+              sizes="(max-width: 768px) 100vw, 320px"
+              unoptimized
+            />
+          </div>
         </div>
       </div>
 

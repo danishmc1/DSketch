@@ -29,13 +29,13 @@ export default function ServicesPage() {
   return (
     <div className="max-w-4xl mx-auto space-y-12">
       {/* Banner */}
-      <div className="relative w-full aspect-[16/6] min-h-[180px] max-h-[300px] rounded-2xl overflow-hidden border border-stone-200 dark:border-stone-800 bg-stone-100 dark:bg-stone-900 shadow-sm">
+      <div className="relative w-full aspect-[1024/235] rounded-2xl overflow-hidden border border-stone-200 dark:border-stone-800 bg-stone-100 dark:bg-stone-900 shadow-sm">
         <Image
           src={assetPath("/images/banner.jpeg")}
-          alt="D-SKETCH Architecture Services"
+          alt="D-SKETCH Architecture Services - Designing Visions. Building Legacies."
           fill
           priority
-          className="object-cover"
+          className="object-cover object-left md:object-center"
           sizes="(max-width: 1024px) 100vw, 896px"
           unoptimized
         />

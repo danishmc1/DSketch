@@ -29,12 +29,19 @@ export default function CareerPage() {
   return (
     <div className="max-w-3xl mx-auto space-y-10">
       <div className="flex items-center gap-3">
-        <div className="relative w-11 h-11 rounded-lg overflow-hidden border border-stone-200 dark:border-stone-700 bg-black flex-shrink-0 shadow-sm">
+        <div className="relative w-11 h-11 flex-shrink-0">
           <Image
-            src={assetPath("/images/icon-black.jpg")}
+            src={assetPath("/images/logo-black.png")}
             alt="D-Sketch Logo"
             fill
-            className="object-cover"
+            className="object-contain dark:hidden"
+            unoptimized
+          />
+          <Image
+            src={assetPath("/images/logo-white.png")}
+            alt="D-Sketch Logo"
+            fill
+            className="object-contain hidden dark:block"
             unoptimized
           />
         </div>
@@ -88,8 +95,8 @@ export default function CareerPage() {
         <div className="pt-4 border-t border-stone-200 dark:border-stone-800 text-sm text-stone-600 dark:text-stone-400">
           <p className="leading-relaxed">
             To apply, email your portfolio and CV to{" "}
-            <a href="mailto:studio@dsketch.com" className="underline font-medium text-stone-900 dark:text-white">
-              studio@dsketch.com
+            <a href="mailto:dsketchmail@gmail.com" className="underline font-medium text-stone-900 dark:text-white">
+              dsketchmail@gmail.com
             </a>{" "}
             with the subject line specifying the position.
           </p>
