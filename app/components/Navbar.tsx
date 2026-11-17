@@ -8,7 +8,7 @@ import { useState } from "react";
 import { useTheme } from "./ThemeProvider";
 
 const navItems = [
-  { name: "Projects", path: "/" },
+  { name: "Home", path: "/" },
   { name: "Services", path: "/services" },
   { name: "About", path: "/about" },
   { name: "Career", path: "/career" },
@@ -47,8 +47,8 @@ export default function Navbar() {
                 unoptimized
               />
             </div>
-            <span className="text-xl font-light tracking-widest uppercase text-stone-900 transition-colors duration-200 dark:text-white">
-              <span className="font-bold">D-</span>Sketch
+            <span className="text-xl font-medium tracking-widest uppercase text-stone-900 transition-colors duration-200 dark:text-white">
+              D-Sketch
             </span>
           </Link>
 

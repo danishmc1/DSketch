@@ -7,68 +7,109 @@ export default function AboutPage() {
     <div className="max-w-4xl mx-auto space-y-16">
       {/* Hero Section */}
       <div className="space-y-4">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs uppercase tracking-widest bg-stone-200/60 dark:bg-stone-800/80 text-stone-600 dark:text-stone-400">
-          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-          Mongam, Kerala · Established Practice
+        <div className="space-y-1">
+          <p className="text-xs uppercase tracking-[0.25em] text-stone-500 dark:text-stone-400 font-medium">
+            D-SKETCH
+          </p>
+          <p className="text-xs uppercase tracking-[0.2em] text-stone-400 dark:text-stone-500 font-mono">
+            Interior | Exterior | Construction
+          </p>
         </div>
-        <h1 className="text-4xl md:text-5xl font-light tracking-tight text-gray-900 dark:text-white transition-colors duration-200">
-          About <span className="font-bold">DSketch</span>
-        </h1>
-        <p className="text-gray-500 dark:text-gray-400 text-sm uppercase tracking-widest transition-colors duration-200">
-          Architecture · Interior · Landscape · Construction
+        <p className="text-sm uppercase tracking-widest text-stone-500 dark:text-stone-400">
+          Designing Dreams. Defining Spaces.
         </p>
+        <h1 className="text-4xl md:text-5xl font-light tracking-tight text-gray-900 dark:text-white transition-colors duration-200">
+          About Us
+        </h1>
         <div className="w-16 h-0.5 bg-black dark:bg-white mt-2 transition-colors duration-200" />
       </div>
 
-      {/* Main Narrative with Studio Logo Card */}
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-        <div className="md:col-span-8 space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed transition-colors duration-200">
-          <p className="text-lg md:text-xl font-light text-stone-800 dark:text-stone-200 leading-relaxed">
-            <strong>D-SKETCH</strong> is a comprehensive architecture and design consultancy based in Mongam, Kerala.
-            We are committed to crafting thoughtful spaces that harmoniously unite functional clarity, climate sensitivity, and timeless aesthetic elegance.
+      {/* Origin Story with Project Photo */}
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+        <div className="md:col-span-7 space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed text-base">
+          <p className="text-lg md:text-xl font-light text-stone-900 dark:text-stone-100 leading-relaxed">
+            Every great design begins with a vision. Ours began with a childhood dream.
           </p>
           <p>
-            From concept to completion, our practice is rooted in deeply collaborative dialogues — translating client aspirations into built realities that respect site, climate, and local materials. We believe great design emerges from an honest dialogue between contextual character, spatial flow, and natural light.
+            Founded in 2012 by Mohammed Shameem, D-Sketch is an architecture and interior design firm based in Malappuram, Kerala, built on a passion for transforming ordinary spaces into extraordinary experiences.
           </p>
           <p>
-            Our portfolio spans bespoke residential residences, intimate luxury villas, and expansive commercial developments across Kerala and beyond. Whether an innovative new build, a sensitive renovation, or a bespoke interior transformation, D-SKETCH delivers each project with rigor, artistic integrity, and technical precision.
+            The story of D-Sketch began long before its establishment. As a young boy, Shameem discovered his fascination for architecture while observing the house plans of his elder sister. What appeared to be simple lines on paper sparked a lifelong curiosity about how spaces are imagined, designed, and brought to life. That early inspiration gradually evolved into a clear ambition — to become a designer who could shape the spaces people call home.
+          </p>
+          <p>
+            After completing his studies in 2011, Shameem immersed himself in the world of architecture and construction, working alongside established architects, learning from experienced professionals, and developing a deeper understanding of design, materials, and the realities of construction. Driven by an independent vision, he established D-Sketch in 2012.
+          </p>
+          <p>
+            The early years were defined by determination, continuous learning, and guidance from senior architects. In 2013, D-Sketch celebrated the completion of its first project — a milestone that marked the beginning of a remarkable journey.
+          </p>
+          <p>
+            What began as one man&apos;s vision has since evolved into a recognised design practice in Malappuram, with a growing portfolio of residential, commercial, and interior design projects across Kerala and beyond.
           </p>
         </div>
-        <div className="md:col-span-4 relative aspect-square w-full rounded-2xl overflow-hidden border border-stone-200 dark:border-stone-800 shadow-md bg-stone-100 dark:bg-stone-900">
-          <Image
-            src={assetPath("/images/project-exterior-2.jpg")}
-            alt="D-SKETCH — Completed Residential Project, Kerala"
-            fill
-            loading="lazy"
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, 320px"
-            unoptimized
-          />
+
+        <div className="md:col-span-5 space-y-4">
+          <div className="relative aspect-[4/5] w-full rounded-2xl overflow-hidden border border-stone-200 dark:border-stone-800 shadow-md bg-stone-100 dark:bg-stone-900">
+            <Image
+              src={assetPath("/images/project-exterior-2.jpg")}
+              alt="D-Sketch Completed Architecture Project, Kerala"
+              fill
+              loading="lazy"
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 400px"
+              unoptimized
+            />
+          </div>
+          <p className="text-[11px] font-mono uppercase tracking-widest text-stone-400 dark:text-stone-500 text-center">
+            D-Sketch Architecture & Interiors · Kerala
+          </p>
         </div>
       </div>
 
-      {/* Stats Bar */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 rounded-2xl border border-stone-200 dark:border-stone-800 bg-white/60 dark:bg-stone-900/40 backdrop-blur-sm">
+      {/* Architecture Rooted in Purpose */}
+      <div className="p-8 md:p-10 rounded-2xl border border-stone-200 dark:border-stone-800 bg-white/60 dark:bg-stone-900/40 space-y-4">
+        <p className="text-xs uppercase tracking-widest text-stone-400 dark:text-stone-500 font-mono">
+          Core Purpose
+        </p>
+        <h2 className="text-2xl md:text-3xl font-light text-stone-900 dark:text-white">
+          Architecture Rooted in Purpose
+        </h2>
+        <p className="text-base text-stone-700 dark:text-stone-300 leading-relaxed">
+          At D-Sketch, we believe architecture is not merely about creating buildings; it is about understanding people, responding to their surroundings, and designing spaces that enrich everyday life.
+        </p>
+        <p className="text-base text-stone-700 dark:text-stone-300 leading-relaxed">
+          From the beginning, natural light, ventilation, functionality, and spatial comfort have remained central to our design philosophy. Each project is approached with the belief that a thoughtfully designed space should not only be visually compelling but also feel comfortable, welcoming, and deeply connected to those who inhabit it.
+        </p>
+        <p className="text-base text-stone-700 dark:text-stone-300 leading-relaxed">
+          Under the creative direction of Mohammed Shameem, D-Sketch has consistently sought to turn personal aspirations into meaningful architectural spaces — balancing aesthetic expression with practical intelligence.
+        </p>
+      </div>
+
+      {/* Experience That Shapes Possibilities */}
+      <div className="space-y-6 pt-4 border-t border-stone-200 dark:border-stone-800">
         <div>
-          <p className="text-2xl md:text-3xl font-semibold text-stone-900 dark:text-white">15+</p>
-          <p className="text-xs uppercase tracking-wider text-stone-500 dark:text-stone-400 mt-1">Years Practice</p>
+          <p className="text-xs uppercase tracking-widest text-stone-400 dark:text-stone-500 font-mono">
+            Scale & Versatility
+          </p>
+          <h2 className="text-2xl md:text-3xl font-light text-stone-900 dark:text-white mt-1">
+            Experience That Shapes Possibilities
+          </h2>
         </div>
-        <div>
-          <p className="text-2xl md:text-3xl font-semibold text-stone-900 dark:text-white">100+</p>
-          <p className="text-xs uppercase tracking-wider text-stone-500 dark:text-stone-400 mt-1">Projects Delivered</p>
-        </div>
-        <div>
-          <p className="text-2xl md:text-3xl font-semibold text-stone-900 dark:text-white">10k+ sq ft</p>
-          <p className="text-xs uppercase tracking-wider text-stone-500 dark:text-stone-400 mt-1">Scale Capability</p>
-        </div>
-        <div>
-          <p className="text-2xl md:text-3xl font-semibold text-stone-900 dark:text-white">100%</p>
-          <p className="text-xs uppercase tracking-wider text-stone-500 dark:text-stone-400 mt-1">Bespoke Design</p>
+
+        <div className="space-y-4 text-base text-stone-700 dark:text-stone-300 leading-relaxed">
+          <p>
+            Over the years, our journey has taken us through diverse architectural challenges and opportunities. From designing homes on complex and uneven terrains to developing construction solutions for sites affected by difficult groundwater conditions, D-Sketch has embraced the belief that every challenge presents an opportunity for thoughtful innovation.
+          </p>
+          <p>
+            Our experience extends across individual residences, multi-storey developments, commercial buildings, and hospitality interiors. We have contributed to restaurant interior projects across North Kerala, as well as in Bengaluru and Coimbatore, bringing distinctive spatial experiences to the hospitality sector.
+          </p>
+          <p>
+            Working across different locations, landscapes, and project requirements has strengthened our ability to approach every design with adaptability, technical understanding, and creative confidence.
+          </p>
         </div>
       </div>
 
-      {/* Work Gallery Strip */}
-      <div className="space-y-4">
+      {/* Selected Work Gallery */}
+      <div className="space-y-4 pt-4 border-t border-stone-200 dark:border-stone-800">
         <p className="text-xs uppercase tracking-widest text-stone-400 dark:text-stone-500 font-mono">
           Selected Work
         </p>
@@ -102,41 +143,41 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* Values / Pillars Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4 border-t border-gray-100 dark:border-gray-800 transition-colors duration-200">
-        <div className="p-6 rounded-xl border border-stone-200/80 dark:border-stone-800/80 bg-white/40 dark:bg-stone-900/20">
-          <span className="text-[11px] font-mono uppercase tracking-widest text-stone-400 dark:text-stone-500">01</span>
-          <h3 className="text-xs uppercase tracking-widest font-semibold text-stone-900 dark:text-white my-2 transition-colors duration-200">
-            Philosophy
-          </h3>
-          <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed transition-colors duration-200">
-            Design that respects its native environment, enhances daily wellbeing, and stands the test of time through enduring craftsmanship.
+      {/* Our Philosophy */}
+      <div className="p-8 md:p-10 rounded-2xl border border-stone-200 dark:border-stone-800 bg-stone-50/70 dark:bg-stone-900/30 space-y-5">
+        <p className="text-xs uppercase tracking-widest text-stone-400 dark:text-stone-500 font-mono">
+          Our Philosophy
+        </p>
+        <h2 className="text-2xl md:text-3xl font-light text-stone-900 dark:text-white">
+          We don&apos;t simply design spaces. We design the way people experience them.
+        </h2>
+        <div className="space-y-4 text-base text-stone-700 dark:text-stone-300 leading-relaxed">
+          <p>
+            For us, successful architecture exists at the intersection of creativity, functionality, and human connection. Every project begins with listening — understanding the client&apos;s aspirations, the character of the site, and the possibilities within the space.
           </p>
-        </div>
-        <div className="p-6 rounded-xl border border-stone-200/80 dark:border-stone-800/80 bg-white/40 dark:bg-stone-900/20">
-          <span className="text-[11px] font-mono uppercase tracking-widest text-stone-400 dark:text-stone-500">02</span>
-          <h3 className="text-xs uppercase tracking-widest font-semibold text-stone-900 dark:text-white my-2 transition-colors duration-200">
-            Approach
-          </h3>
-          <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed transition-colors duration-200">
-            Collaborative, research-driven, and meticulously detailed — guiding clients from the preliminary sketch to final site handover.
-          </p>
-        </div>
-        <div className="p-6 rounded-xl border border-stone-200/80 dark:border-stone-800/80 bg-white/40 dark:bg-stone-900/20">
-          <span className="text-[11px] font-mono uppercase tracking-widest text-stone-400 dark:text-stone-500">03</span>
-          <h3 className="text-xs uppercase tracking-widest font-semibold text-stone-900 dark:text-white my-2 transition-colors duration-200">
-            Expertise
-          </h3>
-          <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed transition-colors duration-200">
-            Architecture · Construction Management · Interior Design · Landscape Architecture · Turnkey Execution
+          <p>
+            Our approach is guided by thoughtful planning, natural illumination, effective ventilation, contextual sensitivity, and enduring design value. Whether it is a personal residence, a commercial destination, or a hospitality interior, our goal remains the same: to create spaces that are purposeful, distinctive, and meaningful.
           </p>
         </div>
       </div>
 
+      {/* Our Journey Continues */}
+      <div className="space-y-4 text-center py-6">
+        <p className="text-xs uppercase tracking-widest text-stone-400 dark:text-stone-500 font-mono">
+          Our Journey Continues
+        </p>
+        <p className="text-base md:text-lg text-stone-700 dark:text-stone-300 max-w-2xl mx-auto leading-relaxed">
+          From a childhood fascination with house plans to an established design practice, the journey of D-Sketch has always been driven by curiosity, perseverance, and an unwavering passion for design. Today, with a portfolio spanning diverse architectural and interior projects, we continue to explore new ideas, embrace new challenges, and redefine what spaces can become.
+        </p>
+        <p className="text-base font-medium tracking-wide text-stone-900 dark:text-white pt-2">
+          D-Sketch — Where Vision Takes Shape, and Spaces Become Stories.
+        </p>
+      </div>
+
       {/* Founder Section */}
-      <div className="space-y-6 pt-8 border-t border-gray-100 dark:border-gray-800 transition-colors duration-200">
+      <div className="space-y-6 pt-8 border-t border-stone-200 dark:border-stone-800 transition-colors duration-200">
         <div>
-          <p className="text-xs uppercase tracking-widest text-gray-400 dark:text-gray-500 transition-colors duration-200">
+          <p className="text-xs uppercase tracking-widest text-gray-400 dark:text-gray-500 transition-colors duration-200 font-mono">
             Leadership
           </p>
           <h2 className="text-2xl font-light tracking-tight text-gray-900 dark:text-white mt-1">
@@ -145,27 +186,24 @@ export default function AboutPage() {
         </div>
 
         <div className="p-6 md:p-8 rounded-2xl border border-stone-200 dark:border-stone-800 bg-white/70 dark:bg-stone-900/60 shadow-sm backdrop-blur-sm">
-          {/* Founder Details */}
           <div className="space-y-4 text-gray-700 dark:text-gray-300 transition-colors duration-200">
             <div>
               <h3 className="text-2xl font-medium text-gray-900 dark:text-white transition-colors duration-200">
                 Mohammed Shameem Kottakunnan
               </h3>
               <p className="text-xs text-stone-500 dark:text-stone-400 uppercase tracking-widest mt-1">
-                Founder & Principal Designer · DSketch Architecture
+                Founder & Principal Designer · D-Sketch Architecture
               </p>
             </div>
 
             <p className="text-sm leading-relaxed">
-              With over 15 years of distinguished experience spanning architecture and urban design,
-              <strong> Mohammed Shameem</strong> founded <strong>DSketch</strong> with a singular philosophy: that thoughtful, context-driven architecture has the power to enrich everyday human experiences.
+              With over 15 years of distinguished experience spanning architecture, interiors, and construction management, Mohammed Shameem founded D-Sketch in 2012 with a singular philosophy: that thoughtful, context-driven architecture has the power to enrich everyday human experiences.
             </p>
 
             <p className="text-sm leading-relaxed">
-              His extensive portfolio ranges from intimate tropical villas and bespoke apartments to substantial commercial structures — including auditoriums, commercial shopping complexes, and leisure retreats — spanning built areas from 1,000 to well over 10,000 square feet. Renowned for his nuanced sensitivity to site microclimates, indigenous materials, and structural clarity, Shameem ensures every commission balances creative innovation with sustainability and human comfort.
+              Renowned for his nuanced sensitivity to site microclimates, indigenous materials, and structural clarity, Shameem ensures every commission balances creative innovation with sustainability and human comfort across residential, commercial, and hospitality scales.
             </p>
 
-            {/* Founder Social Link */}
             <div className="pt-2">
               <a
                 href="https://www.instagram.com/mohammed.shameem.184"
@@ -214,7 +252,7 @@ export default function AboutPage() {
       </div>
 
       {/* Collaboration / Inquiry CTA */}
-      <div className="text-center py-8 border-t border-gray-100 dark:border-gray-800">
+      <div className="text-center py-8 border-t border-stone-200 dark:border-stone-800">
         <h3 className="text-lg font-light text-stone-900 dark:text-white mb-2">
           Ready to build something exceptional?
         </h3>
@@ -223,7 +261,7 @@ export default function AboutPage() {
         </p>
         <Link
           href="/contact"
-          className="inline-block bg-black dark:bg-white text-white dark:text-black px-8 py-3 text-xs uppercase tracking-widest font-medium hover:bg-gray-800 dark:hover:bg-gray-200 transition-all duration-200 hover:scale-105"
+          className="inline-block bg-black dark:bg-white text-white dark:text-black px-8 py-3 text-xs uppercase tracking-widest font-medium hover:bg-stone-800 dark:hover:bg-stone-200 transition-all duration-200 hover:scale-105"
         >
           Get in Touch
         </Link>

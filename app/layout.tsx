@@ -8,8 +8,8 @@ import { ThemeProvider } from "./components/ThemeProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "DSketch | Architecture, Interior & Landscape Design",
-  description: "DSketch is an architecture firm specializing in construction, interior design, and landscape architecture.",
+  title: "D-Sketch | Architecture, Interior & Landscape Design",
+  description: "D-Sketch is an architecture firm specializing in construction, interior design, and landscape architecture.",
 };
 
 export default function RootLayout({

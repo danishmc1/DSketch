@@ -47,18 +47,16 @@ export default function CareerPage() {
         </div>
         <div>
           <h1 className="text-3xl font-light tracking-tight text-gray-900 dark:text-white transition-colors duration-200">
-            Career at <span className="font-bold">D-</span>Sketch
+            Career at D-Sketch
           </h1>
           <p className="text-gray-500 dark:text-gray-400 text-xs uppercase tracking-widest transition-colors duration-200">
-            Join Our Architecture & Design Practice
+            Interior | Exterior | Construction
           </p>
         </div>
       </div>
 
       <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed transition-colors duration-200">
-        We are always seeking creative, dedicated individuals — 
-        <strong> architects, interior designers, structural engineers, and site coordinators</strong> — 
-        who are passionate about context-driven design, craft excellence, and material innovation.
+        We are always seeking creative, dedicated individuals — architects, interior designers, structural engineers, and site coordinators — who are passionate about context-driven design, craft excellence, and material innovation.
       </p>
 
       <div className="rounded-2xl border border-stone-200 bg-white/70 p-6 md:p-8 shadow-sm transition-colors duration-200 dark:border-stone-800 dark:bg-stone-900/60 dark:shadow-[0_18px_40px_rgba(0,0,0,0.2)] space-y-6">

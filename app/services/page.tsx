@@ -73,7 +73,7 @@ export default function ServicesPage() {
       <div className="relative w-full aspect-[1024/235] rounded-2xl overflow-hidden border border-stone-200 dark:border-stone-800 bg-stone-100 dark:bg-stone-900 shadow-sm">
         <Image
           src={assetPath("/images/banner.jpeg")}
-          alt="D-SKETCH Architecture Services - Designing Visions. Building Legacies."
+          alt="D-Sketch Architecture Services — Designing Visions. Building Legacy"
           fill
           priority
           className="object-cover object-left md:object-center"
@@ -84,9 +84,13 @@ export default function ServicesPage() {
 
       {/* Page Header & Intro */}
       <div className="space-y-4">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs uppercase tracking-widest bg-stone-200/60 dark:bg-stone-800/80 text-stone-600 dark:text-stone-400">
-          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-          End-to-End Architectural Practice
+        <div className="space-y-1">
+          <p className="text-xs uppercase tracking-[0.25em] text-stone-500 dark:text-stone-400 font-medium">
+            D-SKETCH
+          </p>
+          <p className="text-xs uppercase tracking-[0.2em] text-stone-400 dark:text-stone-500 font-mono">
+            Interior | Exterior | Construction
+          </p>
         </div>
         <h1 className="text-4xl md:text-5xl font-light tracking-tight text-gray-900 dark:text-white transition-colors duration-200">
           Our Services

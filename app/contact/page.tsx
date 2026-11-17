@@ -68,12 +68,17 @@ export default function ContactPage() {
     <div className="max-w-4xl mx-auto space-y-12">
       {/* Page Heading */}
       <div className="space-y-3">
+        <div className="space-y-1">
+          <p className="text-xs uppercase tracking-[0.25em] text-stone-500 dark:text-stone-400 font-medium">
+            D-SKETCH
+          </p>
+          <p className="text-xs uppercase tracking-[0.2em] text-stone-400 dark:text-stone-500 font-mono">
+            Interior | Exterior | Construction
+          </p>
+        </div>
         <h1 className="text-4xl md:text-5xl font-light tracking-tight text-gray-900 dark:text-white transition-colors duration-200">
-          Contact <span className="font-bold">D-</span>Sketch
+          Contact D-Sketch
         </h1>
-        <p className="text-gray-500 dark:text-gray-400 text-xs md:text-sm uppercase tracking-widest transition-colors duration-200">
-          Architecture · Interior · Exterior · Construction
-        </p>
         <p className="text-stone-600 dark:text-stone-300 text-base md:text-lg pt-2 leading-relaxed max-w-2xl">
           Let&apos;s start a project together. Reach out to our studio directly via phone or email, or connect with us across our social channels below.
         </p>

@@ -35,14 +35,17 @@ export default function Footer() {
                   unoptimized
                 />
               </div>
-              <span className="text-xl font-light tracking-widest uppercase text-stone-900 dark:text-white">
-                <span className="font-bold">D-</span>Sketch
+              <span className="text-xl font-medium tracking-widest uppercase text-stone-900 dark:text-white">
+                D-Sketch
               </span>
             </div>
             <p className="text-xs uppercase tracking-[0.2em] text-stone-500 dark:text-stone-400 font-medium">
-              Architecture · Interior · Exterior · Construction
+              Interior | Exterior | Construction
             </p>
-            <p className="text-sm text-stone-600 dark:text-stone-400 max-w-sm leading-relaxed">
+            <p className="text-xs tracking-wider text-stone-500 dark:text-stone-400">
+              Designing Visions. Building Legacy
+            </p>
+            <p className="text-sm text-stone-600 dark:text-stone-400 max-w-sm leading-relaxed pt-1">
               Thoughtful spaces. From concept to completion. Crafting enduring, context-driven architecture across residential and commercial scales.
             </p>
           </div>
@@ -55,7 +58,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-stone-600 dark:text-stone-400">
               <li>
                 <Link href="/" className="hover:text-stone-900 dark:hover:text-white transition-colors">
-                  Projects
+                  Home
                 </Link>
               </li>
               <li>
@@ -65,7 +68,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/about" className="hover:text-stone-900 dark:hover:text-white transition-colors">
-                  About Studio
+                  About
                 </Link>
               </li>
               <li>
@@ -88,7 +91,7 @@ export default function Footer() {
             </p>
             <p className="text-sm text-stone-600 dark:text-stone-400 leading-relaxed">
               1st Floor, TK Building, Mongam,<br />
-              Keralam, India 673642
+              Malappuram, Kerala, India 673642
             </p>
             <div className="pt-1 text-sm text-stone-600 dark:text-stone-400 space-y-1">
               <p>
@@ -150,8 +153,8 @@ export default function Footer() {
 
         {/* Bottom Copyright */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-400 dark:text-stone-500 gap-2">
-          <p>&copy; {year || "2026"} D-SKETCH Architecture. All rights reserved.</p>
-          <p className="tracking-widest uppercase text-[10px]">Mongam · Kerala · India</p>
+          <p>&copy; {year || "2026"} D-Sketch Architecture. All rights reserved.</p>
+          <p className="tracking-widest uppercase text-[10px]">Mongam · Malappuram · Kerala · India</p>
         </div>
       </div>
     </footer>

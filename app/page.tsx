@@ -79,11 +79,11 @@ const services = [
 export default function Home() {
   return (
     <div className="space-y-0">
-      {/* ── Hero Banner ─────────────────────────────────────────────── */}
+      {/* Hero Banner */}
       <div className="relative w-full aspect-[1024/235] rounded-2xl overflow-hidden border border-stone-200/80 dark:border-stone-800 bg-stone-100 dark:bg-stone-900 shadow-sm group mb-10">
         <Image
           src={assetPath("/images/banner.jpeg")}
-          alt="D-SKETCH Architecture — Designing Visions. Building Legacies."
+          alt="D-Sketch — Designing Visions. Building Legacy"
           fill
           priority
           className="object-cover object-left md:object-center transition-transform duration-700 group-hover:scale-[1.01]"
@@ -92,21 +92,23 @@ export default function Home() {
         />
       </div>
 
-      {/* ── Studio Intro ─────────────────────────────────────────────── */}
-      <section className="py-16 md:py-20 space-y-6 max-w-3xl">
-        <p className="text-xs uppercase tracking-widest text-stone-400 dark:text-stone-500 font-mono">
-          Mongam, Kerala · Est. Practice
-        </p>
+      {/* Studio Intro */}
+      <section className="py-12 md:py-16 space-y-5 max-w-3xl">
+        <div className="space-y-1">
+          <p className="text-xs uppercase tracking-[0.25em] text-stone-500 dark:text-stone-400 font-medium">
+            D-SKETCH
+          </p>
+          <p className="text-xs uppercase tracking-[0.2em] text-stone-400 dark:text-stone-500 font-mono">
+            Interior | Exterior | Construction
+          </p>
+        </div>
         <h1 className="text-4xl md:text-6xl font-light tracking-tight text-stone-900 dark:text-white leading-tight">
-          Thoughtful Design.{" "}
-          <span className="font-semibold">Lasting Value.</span>
+          Designing Visions. Building Legacy
         </h1>
         <p className="text-base md:text-lg text-stone-600 dark:text-stone-400 leading-relaxed max-w-xl">
-          D-SKETCH is a full-service architecture and design consultancy
-          delivering integrated solutions — from concept sketches to built
-          reality — across Kerala and beyond.
+          D-Sketch is an architecture and interior design practice based in Malappuram, Kerala, dedicated to transforming ordinary spaces into meaningful, enduring experiences.
         </p>
-        <div className="flex flex-wrap gap-4 pt-2">
+        <div className="flex flex-wrap gap-4 pt-3">
           <Link
             href="/services"
             className="inline-block bg-black dark:bg-white text-white dark:text-black px-7 py-3 text-xs uppercase tracking-widest font-medium hover:bg-stone-700 dark:hover:bg-stone-200 transition-all duration-200 hover:scale-105"
@@ -122,17 +124,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Stats Strip ──────────────────────────────────────────────── */}
+      {/* Stats Strip */}
       <section className="border-y border-stone-200 dark:border-stone-800 py-6">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-2 max-w-lg gap-8">
           {[
             { val: "15+", label: "Years of Practice" },
-            { val: "100+", label: "Projects Delivered" },
-            { val: "10k+", label: "Sq Ft Capability" },
             { val: "100%", label: "Bespoke Design" },
           ].map((s) => (
             <div key={s.label}>
-              <p className="text-2xl md:text-3xl font-semibold text-stone-900 dark:text-white">
+              <p className="text-2xl md:text-3xl font-light text-stone-900 dark:text-white">
                 {s.val}
               </p>
               <p className="text-[11px] uppercase tracking-wider text-stone-500 dark:text-stone-400 mt-1">
@@ -143,15 +143,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Services Overview ─────────────────────────────────────────── */}
+      {/* Services Overview */}
       <section className="py-16 md:py-20 space-y-10">
         <div className="space-y-2">
           <p className="text-xs uppercase tracking-widest text-stone-400 dark:text-stone-500 font-mono">
             What We Do
           </p>
           <h2 className="text-2xl md:text-3xl font-light text-stone-900 dark:text-white">
-            Integrated Design &{" "}
-            <span className="font-semibold">Build Services</span>
+            Integrated Design & Build Services
           </h2>
         </div>
 
@@ -164,7 +163,7 @@ export default function Home() {
               <span className="text-[11px] font-mono uppercase tracking-widest text-stone-400 dark:text-stone-500">
                 {s.num}
               </span>
-              <h3 className="text-sm uppercase tracking-widest font-semibold text-stone-900 dark:text-white mt-2 mb-2">
+              <h3 className="text-sm uppercase tracking-widest font-medium text-stone-900 dark:text-white mt-2 mb-2">
                 {s.name}
               </h3>
               <p className="text-sm text-stone-600 dark:text-stone-400 leading-relaxed">
@@ -197,14 +196,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Portfolio Grid ───────────────────────────────────────────── */}
+      {/* Portfolio Grid */}
       <section className="py-4 space-y-8">
         <div className="space-y-2">
           <p className="text-xs uppercase tracking-widest text-stone-400 dark:text-stone-500 font-mono">
             Selected Work
           </p>
           <h2 className="text-2xl md:text-3xl font-light text-stone-900 dark:text-white">
-            From Our <span className="font-semibold">Portfolio</span>
+            From Our Portfolio
           </h2>
         </div>
 
@@ -224,7 +223,6 @@ export default function Home() {
                 sizes="(max-width: 768px) 50vw, 33vw"
                 unoptimized
               />
-              {/* Overlay label */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
                 <p className="text-[10px] uppercase tracking-widest text-white/70 font-mono">
@@ -239,14 +237,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── CTA Section ──────────────────────────────────────────────── */}
+      {/* CTA Section */}
       <section className="py-16 md:py-24 text-center border-t border-stone-200 dark:border-stone-800 mt-8">
         <p className="text-xs uppercase tracking-widest text-stone-400 dark:text-stone-500 font-mono mb-4">
           Let&apos;s Collaborate
         </p>
         <h2 className="text-3xl md:text-4xl font-light text-stone-900 dark:text-white mb-4 leading-tight">
-          Let&apos;s Build Something{" "}
-          <span className="font-semibold">Meaningful.</span>
+          Let&apos;s Build Something Meaningful.
         </h2>
         <p className="text-sm text-stone-500 dark:text-stone-400 max-w-md mx-auto mb-8 leading-relaxed">
           Have a project in mind? Let&apos;s discuss your ideas and explore how
