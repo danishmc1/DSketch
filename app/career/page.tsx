@@ -27,9 +27,9 @@ const openPositions = [
 
 export default function CareerPage() {
   return (
-    <div className="max-w-3xl mx-auto space-y-10">
+    <div className="max-w-3xl mx-auto space-y-8 sm:space-y-10">
       <div className="flex items-center gap-3">
-        <div className="relative w-11 h-11 flex-shrink-0">
+        <div className="relative w-10 h-10 sm:w-11 sm:h-11 flex-shrink-0">
           <Image
             src={assetPath("/images/logo-black.png")}
             alt="D-Sketch Logo"
@@ -46,16 +46,16 @@ export default function CareerPage() {
           />
         </div>
         <div>
-          <h1 className="text-3xl font-light tracking-tight text-gray-900 dark:text-white transition-colors duration-200">
+          <h1 className="text-2xl sm:text-3xl font-light tracking-tight text-gray-900 dark:text-white transition-colors duration-200">
             Career at D-Sketch
           </h1>
-          <p className="text-gray-500 dark:text-gray-400 text-xs uppercase tracking-widest transition-colors duration-200">
+          <p className="text-gray-500 dark:text-gray-400 text-[11px] sm:text-xs uppercase tracking-widest transition-colors duration-200">
             Interior | Exterior | Construction
           </p>
         </div>
       </div>
 
-      <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed transition-colors duration-200">
+      <p className="text-gray-600 dark:text-gray-300 text-base sm:text-lg leading-relaxed transition-colors duration-200">
         We are always seeking creative, dedicated individuals — architects, interior designers, structural engineers, and site coordinators — who are passionate about context-driven design, craft excellence, and material innovation.
       </p>
 

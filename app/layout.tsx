@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={`${inter.className} min-h-screen bg-stone-50 text-stone-900 antialiased transition-colors duration-300 dark:bg-[#09090b] dark:text-stone-50`}>
         <ThemeProvider>
           <Navbar />
-          <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+          <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 md:py-10">
             {children}
           </main>
           <Footer />
