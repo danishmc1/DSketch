@@ -34,25 +34,16 @@ export default function AboutPage() {
             Our portfolio spans bespoke residential residences, intimate luxury villas, and expansive commercial developments across Kerala and beyond. Whether an innovative new build, a sensitive renovation, or a bespoke interior transformation, D-SKETCH delivers each project with rigor, artistic integrity, and technical precision.
           </p>
         </div>
-        <div className="md:col-span-4 relative aspect-square w-full rounded-2xl overflow-hidden border border-stone-200 dark:border-stone-800 shadow-md bg-stone-100 dark:bg-stone-900 flex items-center justify-center p-8">
-          <div className="relative w-full h-full">
-            <Image
-              src={assetPath("/images/logo-black.png")}
-              alt="D-SKETCH Architecture Brand Logo"
-              fill
-              className="object-contain dark:hidden"
-              sizes="(max-width: 768px) 100vw, 320px"
-              unoptimized
-            />
-            <Image
-              src={assetPath("/images/logo-white.png")}
-              alt="D-SKETCH Architecture Brand Logo"
-              fill
-              className="object-contain hidden dark:block"
-              sizes="(max-width: 768px) 100vw, 320px"
-              unoptimized
-            />
-          </div>
+        <div className="md:col-span-4 relative aspect-square w-full rounded-2xl overflow-hidden border border-stone-200 dark:border-stone-800 shadow-md bg-stone-100 dark:bg-stone-900">
+          <Image
+            src={assetPath("/images/project-exterior-2.jpg")}
+            alt="D-SKETCH — Completed Residential Project, Kerala"
+            fill
+            loading="lazy"
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 320px"
+            unoptimized
+          />
         </div>
       </div>
 
@@ -73,6 +64,41 @@ export default function AboutPage() {
         <div>
           <p className="text-2xl md:text-3xl font-semibold text-stone-900 dark:text-white">100%</p>
           <p className="text-xs uppercase tracking-wider text-stone-500 dark:text-stone-400 mt-1">Bespoke Design</p>
+        </div>
+      </div>
+
+      {/* Work Gallery Strip */}
+      <div className="space-y-4">
+        <p className="text-xs uppercase tracking-widest text-stone-400 dark:text-stone-500 font-mono">
+          Selected Work
+        </p>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          {[
+            { src: "/images/project-living-room.jpg", label: "Interior" },
+            { src: "/images/project-kitchen-modern.jpg", label: "Kitchen" },
+            { src: "/images/project-dining.jpg", label: "Dining" },
+            { src: "/images/project-exterior-1.jpg", label: "Architecture" },
+          ].map((img) => (
+            <div
+              key={img.src}
+              className="relative aspect-square rounded-xl overflow-hidden bg-stone-100 dark:bg-stone-900 group"
+            >
+              <Image
+                src={assetPath(img.src)}
+                alt={img.label}
+                fill
+                loading="lazy"
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                sizes="(max-width: 768px) 50vw, 25vw"
+                unoptimized
+              />
+              <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                <span className="text-[10px] uppercase tracking-widest text-white font-mono">
+                  {img.label}
+                </span>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 
